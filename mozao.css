@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:  #c058e9;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;  
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ff0000c7;
+}
+
+section {
+    padding: 80px 20px 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section h1 {
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    background-color: #9216c4;
+    border-radius: 5px;
+}
+
+section p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin: 0;
+    padding: 0 20px;
+    opacity: 0;
+}
+
+section.active p {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 20px;
+    background-color: #9216c4;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#emanuelly {
+    background-color: #ad0aee;
+    padding-top: 100px;
+}
+
+#caua {
+    background-color: #ad0aee;
+}
+
+#nossa-historia {
+    background-color: #ad0aee;
+}
+
+#carrossel {
+    background-color: #ad0aee;
+    padding-bottom: 60px;
+}
+
+.carousel {
+    width: 80%;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(174, 0, 255, 0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(115, 0, 192, 0.5);
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: white;
+}
