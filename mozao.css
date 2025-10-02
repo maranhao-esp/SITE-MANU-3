@@ -109,43 +109,7 @@ section.active p {
     display: block;
 }
 
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(174, 0, 255, 0.5);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    z-index: 10;
-}
 
-.carousel-control.prev {
-    left: 0;
-}
 
-.carousel-control.next {
-    right: 0;
-}
 
-.carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
 
-.indicator {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: rgba(115, 0, 192, 0.5);
-    cursor: pointer;
-}
-
-.indicator.active {
-    background-color: white;
-}
